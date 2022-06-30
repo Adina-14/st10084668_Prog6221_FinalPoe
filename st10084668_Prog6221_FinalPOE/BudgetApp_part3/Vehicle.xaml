@@ -1,0 +1,61 @@
+﻿<Window x:Class="BudgetApp_part3.Vehicle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetApp_part3"
+        mc:Ignorable="d"
+         Height="500" Width="500"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle ="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True" >
+
+    <Border CornerRadius="10">
+
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/peakpx.jpg" />
+        </Border.Background>
+        <Grid>
+            <Label Content="Vehicle" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="30" Foreground="#FFF9F8F8"/>
+            <RadioButton x:Name="rbNotBuying" Content="Not Buying" HorizontalAlignment="Left" Margin="29,70,0,0" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold" Foreground="#FFFCFCFC" GroupName="2" Checked="rbNotBuying_Checked"/>
+            <Border BorderThickness="1" BorderBrush="White" Height="5" Width="465" Canvas.Left="39" Canvas.Top="102" RenderTransformOrigin="0.5,0.5" Background="White" Margin="25,108,10,387">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <RadioButton x:Name="rbBuying" Content="Buying" HorizontalAlignment="Left" Margin="29,134,0,0" VerticalAlignment="Top" Foreground="#FFFEFDFD" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold" GroupName="2" Checked="rbBuying_Checked"/>
+            <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="447,10,0,0" VerticalAlignment="Top" Width="43" Foreground="#FFFEFEFE" Height="22" Background="#FF050505" Click="btnExit_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label x:Name="lblMake" Content="Vehicle Make and Model :" Visibility="Hidden" HorizontalAlignment="Left" Margin="29,172,0,0" VerticalAlignment="Top" Foreground="#FFFCFCFC" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <Button Content="Submit" HorizontalAlignment="Left" Margin="218,446,0,0" VerticalAlignment="Top" Background="#FF0B0A0A" Foreground="#FFFBFBFB" FontFamily="Baskerville Old Face" FontSize="18" Height="31" Width="69" Click="Button_Click">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label x:Name="lblpPrice" Content="Purchase Price :" Visibility="Hidden" HorizontalAlignment="Left" Margin="29,219,0,0" VerticalAlignment="Top" Foreground="#FFFEFEFE" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <Label x:Name="lblDeposit" Content="Deposit :" Visibility="Hidden" HorizontalAlignment="Left" Margin="29,275,0,0" VerticalAlignment="Top" Foreground="#FFFCFCFC" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <Label x:Name="lblInterest" Content="Interest Rate :" Visibility="Hidden" HorizontalAlignment="Left" Margin="29,326,0,0" VerticalAlignment="Top" Foreground="#FFFBFBFB" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <Label x:Name="lblInsurance" Content="Insurance Premium :" Visibility="Hidden" HorizontalAlignment="Left" Margin="29,379,0,0" VerticalAlignment="Top" Foreground="#FFFEFEFE" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <TextBox x:Name="tbMakeModel" Visibility="Hidden" TextAlignment="Right" HorizontalAlignment="Left" Margin="258,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="26" Foreground="Black" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbPurPrice" Visibility="Hidden" TextAlignment="Right" HorizontalAlignment="Left" Margin="258,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbDeposit" Visibility="Hidden" TextAlignment="Right" HorizontalAlignment="Left" Margin="258,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbInterest" Visibility="Hidden" TextAlignment="Right" HorizontalAlignment="Left" Margin="258,326,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbInsurance" Visibility="Hidden" TextAlignment="Right" HorizontalAlignment="Left" Margin="258,379,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+
+        </Grid>
+    </Border>
+</Window>

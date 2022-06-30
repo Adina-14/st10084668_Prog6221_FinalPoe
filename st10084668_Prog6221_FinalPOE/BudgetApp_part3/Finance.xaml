@@ -1,0 +1,95 @@
+﻿<Window x:Class="BudgetApp_part3.Finance"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BudgetApp_part3"
+        mc:Ignorable="d"
+        Height="500" Width="500"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle ="None"
+        ResizeMode="NoResize"
+        Background="Transparent"
+        AllowsTransparency="True" >
+
+    <Border CornerRadius="10">
+
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/peakpx.jpg" />
+        </Border.Background>
+
+
+        <Grid>
+            <Label Content="Finance" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" Foreground="White" FontFamily="Baskerville Old Face"></Label>
+            <Label x:Name="lblIncome" Content="Monthly Income :" HorizontalAlignment="Left" Margin="62,77,0,0" VerticalAlignment="Top" Foreground="#FFFBFBFB" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <Border BorderThickness="1" BorderBrush="White" Height="5" Width="465" Canvas.Left="39" Canvas.Top="102" RenderTransformOrigin="0.5,0.5" Background="White" Margin="25,108,10,387">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Label x:Name="lblTax" Content="Tax Deduct :" HorizontalAlignment="Left" Margin="62,123,0,0" VerticalAlignment="Top" Foreground="#FFFBFBFB" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <Border BorderThickness="1" BorderBrush="White" Height="5" Width="465" Canvas.Left="39" Canvas.Top="102" RenderTransformOrigin="0.5,0.5" Background="White" Margin="25,155,10,340">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Margin="447,6,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.202,1.152" Background="#FF0D0C0C" Foreground="#FFF2F0F0" BorderBrush="#FF3B3333" Click="btnExit_Click" Width="43" Height="22">
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label Content="Expenses" HorizontalAlignment="Left" Margin="204,181,0,0" VerticalAlignment="Top" Foreground="#FFFBFBFB" FontFamily="Baskerville Old Face" FontSize="25" FontWeight="Bold" RenderTransformOrigin="0.618,0.495"/>
+            <Border BorderThickness="1" BorderBrush="White" Height="5" Width="465" Canvas.Left="39" Canvas.Top="102" RenderTransformOrigin="0.5,0.5" Background="White" Margin="25,220,10,275">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <Label Content="Groceries :" HorizontalAlignment="Left" Margin="71,0,0,0" VerticalAlignment="Center" Foreground="#FFFBF9F9" FontSize="18" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
+            <Label Content="Water and Lights :" HorizontalAlignment="Left" Margin="69,275,0,0" VerticalAlignment="Top" Foreground="#FFF3F2F2" FontFamily="Baskerville Old Face" FontWeight="Bold" FontSize="18"/>
+            <Label Content="Travel :" HorizontalAlignment="Left" Margin="69,320,0,0" VerticalAlignment="Top" Foreground="#FFFAFAFA" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <Label Content="Cell and Telephone :" HorizontalAlignment="Left" Margin="69,366,0,0" VerticalAlignment="Top" Foreground="#FFF6F5F5" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold" RenderTransformOrigin="0.407,0.539"/>
+            <Label Content="Other :" HorizontalAlignment="Left" Margin="71,409,0,0" VerticalAlignment="Top" Foreground="#FFF6F5F5" FontFamily="Baskerville Old Face" FontSize="18" FontWeight="Bold"/>
+            <TextBox x:Name="tbMonthlyIncome" HorizontalAlignment="Left" TextAlignment="Right" Margin="223,77,0,0"  VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbTax" HorizontalAlignment="Left" TextAlignment="Right" Margin="223,123,0,0"  VerticalAlignment="Top" Width="150" Height="27" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <Border BorderThickness="1" BorderBrush="White" Height="5" Width="465" Canvas.Left="39" Canvas.Top="102" RenderTransformOrigin="0.5,0.5" Background="White" Margin="25,437,10,58">
+                <Border.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Border.RenderTransform>
+            </Border>
+            <TextBox x:Name="tbGroceries" HorizontalAlignment="Left" TextAlignment="Right" Margin="258,0,0,0"  VerticalAlignment="Center" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbRates" HorizontalAlignment="Left" TextAlignment="Right" Margin="258,280,0,0"  VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbTravel" HorizontalAlignment="Left" TextAlignment="Right" Margin="258,325,0,0"  VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbPhone" HorizontalAlignment="Left" TextAlignment="Right" Margin="258,368,0,0"  VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <TextBox x:Name="tbOther" HorizontalAlignment="Left" TextAlignment="Right" Margin="258,406,0,0"  VerticalAlignment="Top" Width="150" Height="26" FontFamily="Baskerville Old Face" FontSize="18"/>
+            <Button  Content="Submit" HorizontalAlignment="Left" Margin="211,458,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.359,0.519" Height="32" Width="93" Foreground="#FFF6F5F5" Background="#FF100F0F" FontFamily="Baskerville Old Face" FontSize="20" Click="Button_Click" >
+                <Button.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Border>
+</Window>

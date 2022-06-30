@@ -1,0 +1,18 @@
+-------------------------------------
+            CHANGE LOG
+-------------------------------------
+Author : Adina Cherise Raman
+Email : st10084668@vcconnect.edu.za
+Student number : st10084668
+
+-------------------------------------
+changes made:
+-added more comments
+-added more methods
+-added exception handling
+-added new functionality Saving
+-changed to wpf (front end) GUI design
+ +textboxes to input values
+ +radiobuttons for choices
+ +buttons to move to next window 
+-added saving to textfile

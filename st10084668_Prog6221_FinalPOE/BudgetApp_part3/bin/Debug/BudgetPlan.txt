@@ -1,0 +1,40 @@
+
+Income : 40000
+----------------------------------------------
+Expenses: 
+----------------------------------------------
+Rent: 3040,3
+Tax: 2000
+Phone: 394
+Travel: 49
+Groceries: 48
+Rates: 39,8
+Other: 29
+----------------------------------------------
+Savings: 
+----------------------------------------------
+Savings Reason : Birthday
+Amount to save : 4000
+Interest Rate (%) :23
+Time Period (months) :6
+MonthlySavings : 666,666666666667
+
+Income : 40000
+----------------------------------------------
+Expenses: 
+----------------------------------------------
+Rent: 3040,3
+Tax: 2000
+Phone: 394
+Travel: 49
+Groceries: 48
+Rates: 39,8
+Other: 29
+----------------------------------------------
+Savings: 
+----------------------------------------------
+Savings Reason : Birthday
+Amount to save : 4000
+Interest Rate (%) :23
+Time Period (months) :6
+MonthlySavings : 666,666666666667
